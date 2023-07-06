@@ -1,0 +1,24 @@
+Number of realizations # 1
+Random Seed (0 `random` seed) # 0
+Maximum number of counts for condtitional pdf # 10
+Max number of conditional point # 10
+Max number of iterations # 3000
+Simulation grid size X # 250
+Simulation grid size Y # 250
+Simulation grid size Z # 1
+Simulation grid world/origin X # 0
+Simulation grid world/origin Y # 0
+Simulation grid world/origin Z # 0
+Simulation grid grid cell size X # 1
+Simulation grid grid cell size Y # 1
+Simulation grid grid cell size Z # 1
+Training image file (spaces not allowed) # ti_strebelle_250_250_1.dat
+Output folder (spaces in name not allowed) # ./
+Shuffle Simulation Grid path (1 : random, 0 : sequential) # 1
+Shuffle Training Image path (1 : random, 0 : sequential) # 1
+HardData filename  (same size as the simulation grid) # conditional.dat
+HardData seach radius (world units) # 1
+Softdata categories (separated by ;) # 0;1
+Soft datafilenames (separated by ; only need (number_categories - 1) grids) # soft.dat
+Number of threads (not currently used) # 4
+Debug mode(2: write to file, 1: show preview, 0: show counters, -1: no ) # 1
