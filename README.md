@@ -20,10 +20,13 @@ Hongfeng Fang 1440683528@qq.com
 
 ## How To Use
 
-### Requirements
+### Requirements example
 
-* Python 3.6+ 
-* Numpy 1.20.1
+
+* python 3.8 
+* numpy 1.20.1
+* matplotlib 3.7.1 
+* scikit-learn 1.2.2
 
 ### Installation
 
