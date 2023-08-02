@@ -11,8 +11,8 @@
 21is_sample_first#False
 23is_use_same_path_size#False
 25Training image file (spaces not allowed) # ti_strebelle_250_250_1.dat
-27Sample data file() # channel_100.SGEMS
-Output folder (spaces in name not allowed) # E:\ds_simulation.SGEMS
+27Sample data file() # channel_100.dat
+Output folder (spaces in name not allowed) # .\ds_simulation.SGEMS
 
 Number of realizations # 1
 Random Seed (0 `random` seed) # 1

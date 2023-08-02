@@ -1,3 +1,4 @@
+import os
 import random
 import sys
 import time
@@ -675,13 +676,15 @@ def save_Simulation(file_path, ext,m_Sim):
     print(scanX,scanY,scanZ)
 
     try:
-        file = open(file_path+"."+ext, 'w+')
+        # if not os.path.exists(file_path):
+        #     os.makedirs(file_path)
+        file = open(file_path+ext, 'w+')
     except OSError as error:
         print("打开文件错误" + str(error))
         return False
     finally:
         # 选择的文件类型是SGEMS
-        if ext == "SGEMS":
+        if ext == ".SGEMS":
             file.write(str(scanX) + " ")
             file.write(str(scanY) + " ")
             file.write(str(scanZ) + "\n")
@@ -765,13 +768,13 @@ def cSimulation(parameter_file):
         # print(str(test_i))
         # print(data[29].split(".")[1])
         # print( data[29].split(".")[2])
-        fileData = data[29].split(".")
-        print(fileData)
+        file_name, file_extension = os.path.splitext(data[29])
+        # print(fileData)
         # save_Simulation(fileData[0], fileData[1],m_Sim)
-        save_Simulation(fileData[0], fileData[1], m_Sim)
+        save_Simulation(file_name, file_extension, m_Sim)
         # print("保存文件成功，请返回")
         # Etype
-        Etype.DrawEtype(fileData[0])
+        # Etype.DrawEtype(fileData[0])
 
 # if __name__ == '__main__':
 #     # data中有过显示，当做全局变量

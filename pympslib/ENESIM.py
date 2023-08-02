@@ -933,7 +933,7 @@ def start_simulation(filename):
         print( "SG: {0} {1} {2}".format(_sg_dim_x,_sg_dim_y,_sg_dim_z))
         print("TI:{0} {1} {2} {3} {4}".format(_ti_filename,_ti_dim_x,_ti_dim_y,_ti_dim_z,_TI[0][0][0]))
 
-    Etype.DrawEtype(_output_directory)
+    # Etype.DrawEtype(_output_directory)
 
 
 # if __name__ == '__main__':
